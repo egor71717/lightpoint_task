@@ -1,0 +1,21 @@
+﻿<div id="shopsTable">
+    <table class="table table-hover">
+        <thead class="thead-inverse">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Adress</th>
+                <th>Mode</th>
+            </tr>
+        </thead>
+        <tbody data-ng-repeat="shop in shops">
+            <tr class="clickable-row" data-ng-click="toProducts(shop.id)">
+                <td scope="row">{{ shop.id }}</td>
+                <td>{{ shop.name }}</td>
+                <td>{{ shop.adress }}</td>
+                <td>{{ shop.mode }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+</div>

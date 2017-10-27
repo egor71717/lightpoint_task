@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body data-ng-app="appModule">
+    <div class="container body-content">
+        <h2>Lightpoint Task</h2>
+        <div class="content-wrapper">
+            <div data-ng-view=""></div>
+        </div>
+        <footer>
+            <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+        </footer>
+    </div>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/app/app.js"></script>
+    <script src="~/app/services/shopService.js"></script>
+    <script src="~/app/services/productService.js"></script>
+    <script src="~/app/controllers/shopController.js"></script>
+    <script src="~/app/controllers/productController.js"></script>
+</body>
+</html> 
+
